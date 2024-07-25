@@ -57,18 +57,18 @@ button:hover {
     background-color: #3e136b; /* Darker background color on hover */
 }
 
-/* Sayings list styles */
-#sayingsListContainer {
+/* Truisms list styles */
+#TruismsListContainer {
     text-align: left; /* Align text to the left */
     margin-top: 20px; /* Space above the list */
 }
 
-#sayingsList {
+#TruismsList {
     list-style-type: none; /* Remove default list bullets */
     padding: 0; /* Remove default padding */
 }
 
-#sayingsList li {
+#TruismsList li {
     padding: 10px; /* Add padding inside list items */
     border-bottom: 1px solid #ddd; /* Light grey border between items */
     font-size: 18px; /* Set font size */
