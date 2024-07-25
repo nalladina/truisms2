@@ -12,9 +12,9 @@ body {
 
 /* Container styles */
 .container {
-    background-color: grey; /* White background for the container */
-    padding: 30px; /* Add padding inside the container */
-    border-radius: 20px; /* Rounded corners */
+    background-color: white; /* White background for the container */
+    padding: 20px; /* Add padding inside the container */
+    border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
     text-align: center; /* Center text */
     max-width: 500px; /* Limit container width */
@@ -25,8 +25,8 @@ body {
 form {
     display: flex; /* Use flexbox for form layout */
     flex-direction: column; /* Stack form elements vertically */
-    gap: 20px; /* Space between form elements */
-    margin-bottom: 70px; /* Space below the form */
+    gap: 10px; /* Space between form elements */
+    margin-bottom: 20px; /* Space below the form */
 }
 
 /* Label styles */
@@ -36,25 +36,25 @@ label {
 
 /* Input styles */
 input {
-    padding: 10px; /* Add padding inside the input field */
-    border: 3px solid lightblue; /* Light grey border */
-    border-radius: 10px; /* Slightly rounded corners */
+    padding: 8px; /* Add padding inside the input field */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Slightly rounded corners */
 }
 
 /* Button styles */
 button {
-    padding: 20px; /* Add padding inside the button */
+    padding: 10px; /* Add padding inside the button */
     border: none; /* Remove default border */
     border-radius: 4px; /* Slightly rounded corners */
-    background-color: black; /* Blue background color */
+    background-color: #007bff; /* Blue background color */
     color: white; /* White text color */
     cursor: pointer; /* Change cursor to pointer on hover */
-    font-size: 20px; /* Set font size */
+    font-size: 16px; /* Set font size */
 }
 
 /* Change button background on hover */
 button:hover {
-    background-color: goldenrod; /* Darker blue background color */
+    background-color: #0056b3; /* Darker blue background color */
 }
 
 /* Sayings list styles */
