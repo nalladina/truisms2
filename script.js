@@ -3,29 +3,29 @@ function handleFormSubmit(event) {
     event.preventDefault(); // Prevent the default form submission behavior
 
     // Get the value from the input field
-    var sayingInput = document.getElementById('saying');
-    var sayingText = sayingInput.value.trim();
+    var truismInput = document.getElementById('truism');
+    var truismText = truismInput.value.trim();
     
     // Check if the input is not empty
-    if (sayingText) {
-        // Add the saying to localStorage
-        addSayingToLocalStorage(sayingText);
+    if (truismText) {
+        // Add the truism to localStorage
+        addtruismToLocalStorage(truismText);
         
         // Clear the input field
-        sayingInput.value = '';
+        truismInput.value = '';
         
         // Update the displayed list
         displayTruisms();
     }
 }
 
-// Function to add a saying to localStorage
-function addSayingToLocalStorage(sayingText) {
+// Function to add a truism to localStorage
+function addtruismToLocalStorage(truismText) {
     // Retrieve existing Truisms from localStorage
     var Truisms = JSON.parse(localStorage.getItem('TruismsList')) || [];
     
-    // Add the new saying to the array
-    Truisms.push(sayingText);
+    // Add the new truism to the array
+    Truisms.push(truismText);
     
     // Save the updated array back to localStorage
     localStorage.setItem('TruismsList', JSON.stringify(Truisms));
@@ -42,10 +42,10 @@ function displayTruisms() {
     // Clear the current list
     TruismsList.innerHTML = '';
     
-    // Create and append list items for each saying
-    Truisms.forEach(function(saying) {
+    // Create and append list items for each truism
+    Truisms.forEach(function(truism) {
         var listItem = document.createElement('li');
-        listItem.textContent = saying;
+        listItem.textContent = truism;
         TruismsList.appendChild(listItem);
     });
 }
