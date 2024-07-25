@@ -12,7 +12,7 @@ body {
 
 /* Container styles */
 .container {
-    background-color: white; /* white background for the container */
+    background-color: grey; /* grey background for the container */
     padding: 20px; /* Add padding inside the container */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
