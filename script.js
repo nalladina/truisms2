@@ -8,7 +8,7 @@ function handleFormSubmit(event) {
     
     // Check if the input is not empty
     if (sayingText) {
-        // Add the saying to the list in localStorage
+        // Add the saying to localStorage
         addSayingToLocalStorage(sayingText);
         
         // Clear the input field
@@ -21,19 +21,19 @@ function handleFormSubmit(event) {
 
 // Function to add a saying to localStorage
 function addSayingToLocalStorage(sayingText) {
-    // Get existing sayings from localStorage
+    // Retrieve existing sayings from localStorage
     var sayings = JSON.parse(localStorage.getItem('sayingsList')) || [];
     
-    // Add the new saying to the list
+    // Add the new saying to the array
     sayings.push(sayingText);
     
-    // Save the updated list back to localStorage
+    // Save the updated array back to localStorage
     localStorage.setItem('sayingsList', JSON.stringify(sayings));
 }
 
 // Function to display sayings from localStorage
 function displaySayings() {
-    // Get existing sayings from localStorage
+    // Retrieve existing sayings from localStorage
     var sayings = JSON.parse(localStorage.getItem('sayingsList')) || [];
     
     // Get the list element where sayings will be displayed
@@ -42,7 +42,7 @@ function displaySayings() {
     // Clear the current list
     sayingsList.innerHTML = '';
     
-    // Create list items for each saying and append to the list
+    // Create and append list items for each saying
     sayings.forEach(function(saying) {
         var listItem = document.createElement('li');
         listItem.textContent = saying;
@@ -50,14 +50,12 @@ function displaySayings() {
     });
 }
 
-// Wait for the DOM to fully load before attaching event handlers and displaying saved sayings
+// Wait for the DOM to fully load before setting up event handlers and displaying sayings
 document.addEventListener('DOMContentLoaded', function() {
-    // Get the form element by its ID
-    var form = document.getElementById('sayingsForm');
-    
     // Attach the submit event handler to the form
+    var form = document.getElementById('sayingsForm');
     form.addEventListener('submit', handleFormSubmit);
     
-    // Display the saved sayings
+    // Display the saved sayings on page load
     displaySayings();
 });
