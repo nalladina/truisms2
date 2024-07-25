@@ -12,8 +12,9 @@ body {
 
 /* Container styles */
 .container {
-    padding: 20px; /* Add padding inside the container */
-    border-radius: 8px; /* Rounded corners */
+    background-color: grey; /* White background for the container */
+    padding: 30px; /* Add padding inside the container */
+    border-radius: 20px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
     text-align: center; /* Center text */
     max-width: 500px; /* Limit container width */
