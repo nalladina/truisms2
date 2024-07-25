@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truisms List</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Truisms</h1>
+        <!-- Form for inputting sayings -->
+        <form id="sayingsForm">
+            <label for="saying">Enter a Truism:</label>
+            <input type="text" id="saying" name="saying" required>
+            <button type="submit">Add Truism</button>
+        </form>
+        
+        <!-- Display the list of sayings here -->
+        <div id="sayingsListContainer">
+            <h2>Chris & Noreen's Truisms:</h2>
+            <ul id="sayingsList"></ul>
+        </div>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

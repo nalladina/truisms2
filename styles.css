@@ -1,0 +1,75 @@
+/* Basic styles for the body */
+body {
+    font-family: Arial, sans-serif; /* Set the default font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Light grey background color */
+}
+
+/* Container styles */
+.container {
+    background-color: grey; /* White background for the container */
+    padding: 30px; /* Add padding inside the container */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center; /* Center text */
+    max-width: 500px; /* Limit container width */
+    width: 100%; /* Make container full width within max-width */
+}
+
+/* Form element styles */
+form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 20px; /* Space between form elements */
+    margin-bottom: 70px; /* Space below the form */
+}
+
+/* Label styles */
+label {
+    font-weight: bold; /* Make label text bold */
+}
+
+/* Input styles */
+input {
+    padding: 10px; /* Add padding inside the input field */
+    border: 3px solid lightblue; /* Light grey border */
+    border-radius: 10px; /* Slightly rounded corners */
+}
+
+/* Button styles */
+button {
+    padding: 20px; /* Add padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Slightly rounded corners */
+    background-color: black; /* Blue background color */
+    color: white; /* White text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 20px; /* Set font size */
+}
+
+/* Change button background on hover */
+button:hover {
+    background-color: goldenrod; /* Darker blue background color */
+}
+
+/* Sayings list styles */
+#sayingsListContainer {
+    text-align: left; /* Align text to the left */
+    margin-top: 20px; /* Space above the list */
+}
+
+#sayingsList {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding */
+}
+
+#sayingsList li {
+    padding: 10px; /* Add padding inside list items */
+    border-bottom: 1px solid #ddd; /* Light grey border between items */
+    font-size: 18px; /* Set font size */
+}
